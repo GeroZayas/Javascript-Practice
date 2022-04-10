@@ -12,3 +12,6 @@ function repeatStr(n, s) {
 
 console.log(repeatStr(6, "I "));
 console.log(repeatStr(5, "Hello "));
+
+// best implementation
+// repeatStr = (n, s) => s.repeat(n);
