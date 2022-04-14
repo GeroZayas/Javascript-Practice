@@ -12,13 +12,13 @@ findNb(91716553919377) --> -1
 */
 
 function findNb(m) {
-  let total = 0;
-  let n = 0;
-  while (total < m) {
-    total += Math.pow(n, 3);
-    n++;
+  let result = 0;
+  let cubes = 0;
+  while (result < m) {
+    result += cubes ** 3;
+    cubes++;
   }
-  return total === m ? n - 1 : -1;
+  return result === m ? cubes - 1 : -1;
 }
 
 console.log(findNb(1071225)); // 45
