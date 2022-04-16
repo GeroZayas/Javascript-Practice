@@ -10,14 +10,14 @@ function barista(coffees, cMachines) {
     }
     coffees = newCoffees;
     // --------------------------------------------------------
-    // /////////// ////// Sort the array
+    // /////////// Sort the array
     // --------------------------------------------------------
     // this is to order the array from min to max
     coffees = coffees.sort(function (a, b) {
       return a - b;
     });
     // --------------------------------------------------------
-    // /////////// ////// Divide into arrays
+    // /////////// Divide into arrays per coffee machine
     // --------------------------------------------------------
   }
   return 0;
