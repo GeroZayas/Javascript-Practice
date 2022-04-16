@@ -34,20 +34,27 @@ coffees = [4,3,2]       ->  22
 */
 
 function barista(coffees) {
+  // fixed time to clean coffee machine
   const cleaningTime = 2;
+  // Save every waiting time per client
   let waitingTimes = [];
+  //Declare var to be returned
   let totalWaitingTime = 0;
+  //Make sure there is an order to brew some coffee, else return 0
   if (coffees.length > 0) {
     // this is to order the array from min to max
     coffees = coffees.sort(function (a, b) {
       return a - b;
     });
-
+    // Add the first order to waitingTimes without cleaningTime needed for the first order
     waitingTimes.push(coffees[0]);
+    // Loop through orders, starting at the 2nd and add cleaning time plus previous waiting time
     for (let i = 1; i < coffees.length; i++) {
       waitingTimes.push(coffees[i] + cleaningTime + waitingTimes[i - 1]);
     }
+    // Use reduce to get total sum of waitingTimes
     totalWaitingTime = waitingTimes.reduce((a, b) => a + b, 0);
+    // Return total waiting Time
     return totalWaitingTime;
   }
   return 0;
