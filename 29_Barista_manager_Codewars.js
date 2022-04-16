@@ -1,6 +1,21 @@
 function barista(coffees, cMachines) {
   if (coffees.length > 0) {
+    // --------------------------------------------------------
+    // if orders === 0, eliminate them, reduce array
+    var newCoffees = [];
+    for (let i = 0; i < coffees.length; i++) {
+      if (coffees[i] !== 0) {
+        newCoffees.push(coffees[i]);
+      }
+    }
+    coffees = newCoffees;
+    // --------------------------------------------------------
     console.log(coffees);
+    // --------------------------------------------------------
+    // Sort the array
+    // --------------------------------------------------------
+
+    // --------------------------------------------------------
   }
   return 0;
 }
