@@ -35,7 +35,13 @@ function barista(coffees, cMachines) {
         }
         return chunks;
       }
-      console.log(chunkArray(coffees, cMachines));
+      ordersArrays = chunkArray(coffees, cMachines);
+      for (order = 0; order < ordersArrays.length; order++) {
+        for (let i = 1; i < coffees.length; i++) {
+          waitingTimes.push(coffees[i] + cleaningTime + waitingTimes[i - 1]);
+        }
+        console.log(waitingTimes);
+      }
     }
     //// JUST ONE MACHINE:
     else {
