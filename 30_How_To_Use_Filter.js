@@ -11,6 +11,8 @@ const result = words.filter((word) => word.length > 6);
 
 console.log(result);
 
+console.log("---------------------------------");
+
 ////// ////// ////// ////// ////// ////// ////// ////// ////// //////
 
 var nums = [2, 5, 8, 5, 78, 32, 90, 34];
@@ -30,6 +32,8 @@ function divByTwo(num) {
 console.log(divByTwo(45));
 console.log(divByTwo(46));
 
+console.log("---------------------------------");
+
 ////// ////// ////// ////// ////// ////// ////// ////// ////// //////
 
 // We can use filter with a callback function
@@ -43,3 +47,14 @@ var moreNums = [12, 15, 5, 8, 67, 130, 44];
 let filtered = moreNums.filter(divByTwo);
 
 console.log(filtered);
+
+////// ////// ////// ////// ////// ////// ////// ////// ////// //////
+// Let's filter all numbers different than 0
+
+console.log("---------------------------------");
+
+var arrayOfNums = [0, 4, 5, 7, 0, 3, 0, 2];
+
+const numsDiffThanZero = arrayOfNums.filter((num) => num != 0);
+
+console.log(numsDiffThanZero); // [ 4, 5, 7, 3, 2 ]
