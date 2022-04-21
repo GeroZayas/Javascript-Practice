@@ -24,10 +24,20 @@ console.log(theResult);
 ////// ////// ////// ////// ////// ////// ////// ////// ////// //////
 
 function divByTwo(num) {
-  return num % 2 === 0 ? "it is divisible" : "not divisible by 2";
+  return num % 2 === 0;
 }
 
 console.log(divByTwo(45));
 console.log(divByTwo(46));
 
 ////// ////// ////// ////// ////// ////// ////// ////// ////// //////
+
+// We can use filter with a callback function
+
+function isBigEnough(value) {
+  return value >= 10;
+}
+
+let filtered = [12, 15, 5, 8, 67, 130, 44].filter(divByTwo);
+
+console.log(filtered);
