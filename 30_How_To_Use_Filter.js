@@ -38,6 +38,8 @@ function isBigEnough(value) {
   return value >= 10;
 }
 
-let filtered = [12, 15, 5, 8, 67, 130, 44].filter(divByTwo);
+var moreNums = [12, 15, 5, 8, 67, 130, 44];
+
+let filtered = moreNums.filter(divByTwo);
 
 console.log(filtered);
