@@ -1,11 +1,7 @@
-// select button
-
-const generateBtn = document.getElementById("generateBtn");
-
-function hello() {
-  console.log("HELLO");
-}
-
-//  fuction that shows
-
-generateBtn.addEventListener("click", hello);
+var path = "/images/PinDown__Quotes/",
+  imgs = ["1.jpg", "2.jpg", "3.jpg"],
+  i = Math.floor(Math.random() * imgs.length);
+$(".image")
+  .append("<img src='" + path + imgs[i] + "'>")
+  .hide()
+  .fadeIn(2000);
