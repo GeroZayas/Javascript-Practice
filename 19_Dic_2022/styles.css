@@ -1,0 +1,23 @@
+.header {
+    color: #ffee00;
+    /* background-color: #850000; */
+    padding: 30px 20px;
+    background: linear-gradient(#ca5151, rgb(255, 219, 172));
+    text-align: center;
+    border-radius: 2em;
+    font-size: 1.3em;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Merriweather';
+}
+
+p {
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #FFDB89;
+    border-radius: 2em;
+    padding: 30px 20px;
+}
+
+.cat-word-input {
+    
+}
