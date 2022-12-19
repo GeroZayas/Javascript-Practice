@@ -8,6 +8,8 @@
     font-size: 1.3em;
     /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
     font-family: 'Merriweather';
+    width: 50%;
+    margin: auto;
 }
 
 p {
@@ -19,13 +21,38 @@ p {
 }
 
 .word-input {
+    margin: auto;
     text-align: center;
-    margin: 1.3em;
     padding: 30px;
+    width: 50%;
     background: linear-gradient(#ddadad, rgb(255, 219, 172));
     border-radius: 5em;
+    justify-content : center;
+    align-items : center;
+    margin-top: 20px;
 }
 
 .cat-word-input {
     font-size: 2em;
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+}
+
+
+
+button {
+    padding: 1.2em;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+    border-radius: 2em;
+}
+
+button:hover {
+    background-color: #ca5151;
+    color: #fffddd;
+    ;
 }
